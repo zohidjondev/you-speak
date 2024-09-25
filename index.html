@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Learners - Speaking Progress</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="image.webp" alt="Logo" />
+        </div>
+        <h1>Speaking Club</h1>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>English enthusiasts who are eager to learn English</h2>
+    </section>
+
+    <!-- Speaking Progress Section -->
+    <section id="progress">
+      <h3>Speaking Progress</h3>
+
+      <!-- Dropdown for selecting participants -->
+      <label for="participant-select">Choose a participant:</label>
+      <select id="participant-select">
+        <option value="" disabled selected>Select a participant</option>
+      </select>
+
+      <!-- Table to display selected participant's speaking scores -->
+      <div id="participant-progress">
+        <table id="progress-table">
+          <thead>
+            <tr>
+              <th>Session</th>
+              <th>Speaking Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

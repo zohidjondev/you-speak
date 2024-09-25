@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefc;
+  color: #3f2e4e;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #3f2e4e, #5b4a72);
+  color: #fefefc;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.logo-icon img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3f2e4e, #6d5582);
+  color: #fefefc;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#progress {
+  padding: 40px 20px;
+  background-color: #fefefc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#progress h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3f2e4e;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+#participant-select {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #3f2e4e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+#participant-select:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#progress-table {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+#progress-table th, #progress-table td {
+  border: 1px solid #3f2e4e;
+  padding: 10px;
+  text-align: center;
+}
+
+#progress-table th {
+  background-color: #3f2e4e;
+  color: #fefefc;
+}
+
+#progress-table tr:hover {
+  transform: scale(1.02);
+}
+
+#progress-table td {
+  background-color: #fefefc;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  #progress-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #participant-select {
+    width: 90%;
+  }
+}
