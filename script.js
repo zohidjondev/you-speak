@@ -28,6 +28,20 @@ const data = {
     Qobiljon: { Speaking: 54 },
     Kamronbek: { Speaking: 53 },
   },
+  "Speaking Session 5": {
+    "Odilov Sanjarbek": { Speaking: 42 },
+    Eldorbek: { Speaking: 53 },
+    "Omonov Sanjarbek": { Speaking: 0 },
+    Qobiljon: { Speaking: 57 },
+    Kamronbek: { Speaking: 55 },
+  },
+  "Speaking Session 6": {
+    "Odilov Sanjarbek": { Speaking: 45 },
+    Eldorbek: { Speaking: 53 },
+    "Omonov Sanjarbek": { Speaking: 0 },
+    Qobiljon: { Speaking: 57 },
+    Kamronbek: { Speaking: 55 },
+  },
 };
 
 // Get unique participants from the JSON data
