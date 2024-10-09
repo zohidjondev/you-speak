@@ -48,6 +48,20 @@ const data = {
     "Omonov Sanjarbek": { Speaking: 0 },
     Qobiljon: { Speaking: 57 },
     Kamronbek: { Speaking: 56 },
+  },
+  "Speaking Session 8": {
+    "Odilov Sanjarbek": { Speaking: 46 },
+    Eldorbek: { Speaking: 53 },
+    "Omonov Sanjarbek": { Speaking: 0 },
+    Qobiljon: { Speaking: 57 },
+    Kamronbek: { Speaking: 56 },
+  },
+  "Speaking Session 9": {
+    "Odilov Sanjarbek": { Speaking: 48 },
+    Eldorbek: { Speaking: 53 },
+    "Omonov Sanjarbek": { Speaking: 0 },
+    Qobiljon: { Speaking: 57 },
+    Kamronbek: { Speaking: 57 },
   }
 };
 
