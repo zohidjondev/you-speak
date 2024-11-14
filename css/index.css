@@ -24,6 +24,18 @@ body {
   color: #f1efe7;
 }
 
+h1 {
+  font-size: 3em;
+  color: white;
+  letter-spacing: 1px;
+}
+.transparent {
+  color: #292929;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
 /* Navbar */
 nav {
   width: 100%;
