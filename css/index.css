@@ -84,7 +84,7 @@ ul.nav-links li a:hover {
 #hero {
   position: relative;
   width: 100%;
-  background-image: url("/Images/hero-bg.jpg"); /* Replace with the path to your hero background image */
+  background-image: url("../images/hero-bg.jpg"); /* Replace with the path to your hero background image */
   background-size: cover;
   background-position: center;
   padding: 50px 20px;
@@ -165,7 +165,7 @@ ul.nav-links li a:hover {
 #join-telegram {
   position: relative;
   width: 100%;
-  background-image: url("/Images/telgram-bg.avif"); /* Replace with the path to your background image */
+  background-image: url("../images/telgram-bg.avif"); /* Replace with the path to your background image */
   background-size: cover;
   background-position: center;
   padding: 50px 20px;
