@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Add a click event to the button to navigate to the home page or any other desired page
       endButton.addEventListener("click", () => {
-        window.location.href = "index.html"; // or the desired page link
+        window.location.href = "test.html"; // or the desired page link
       });
     }
   }

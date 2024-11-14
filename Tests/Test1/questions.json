@@ -2,45 +2,49 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 10,
-      "answerTime": 30,
+      "prepareTime": 2,
+      "answerTime": 3,
       "questions": [
-        { "question1Part1.1": "What do you enjoy doing in your free time?" },
+        { "question1Part1.1": "What kind of music do you like to listen to?" },
         {
-          "question2Part1.1": "Do you prefer spending time alone or with friends? Why?"
+          "question2Part1.1": "What is your favorite meal of the day?"
         },
-        { "question3Part1.1": "Can you describe your typical day at school?" }
+        {
+          "question3Part1.1": "Can you describe a place you like to visit often?"
+        }
       ]
     },
     {
       "part": "Part 1.2",
-      "images": ["image1.jpg", "image2.jpg"],
-      "prepareTime": 10,
-      "answerTime": 45,
+      "images": ["1.avif", "2.jpg"],
+      "prepareTime": 2,
+      "answerTime": 3,
       "questions": [
         {
-          "question1Part1.2": "What differences do you notice between the two scenes?"
+          "question1Part1.2": "How do these two places make you feel, and which one would you prefer for studying?"
         },
         {
-          "question2Part1.2": "Which place would you prefer to spend time in? Why?"
+          "question2Part1.2": "What are the people in each picture doing, and how are their activities different from each other?"
         },
         {
-          "question3Part1.2": "How do you think these places affect the people who visit them?"
+          "question3Part1.2": "What advantages might there be to studying in a place like the one shown in the second picture?"
         }
       ]
     },
     {
       "part": "Part 2",
-      "images": ["image3.jpeg"],
-      "prepareTime": 60,
-      "answerTime": 120,
+      "images": ["3.avif"],
+      "prepareTime": 6,
+      "answerTime": 12,
       "questions": [
         {
-          "question1Part2": "What do you think the person might be working on?"
+          "question1Part2": "What benefits do you think these people get from spending time outdoors in nature?"
         },
-        { "question1Part2": "How might the environment of this office affect their productivity?" },
         {
-          "question1Part2": "How does working in an office compare to working from home?"
+          "question1Part2": "How do you think this experience might be different from doing indoor activities?"
+        },
+        {
+          "question1Part2": "Do you think people should spend more time in nature? Why or why not?"
         }
       ]
     },
@@ -49,21 +53,21 @@
       "description": "Argument Discussion",
       "questions": [
         {
-          "statement": "Online learning vs. traditional classroom learning.",
+          "statement": "Children should not be given smartphones until they are teenagers.",
           "For": {
-            "fact1": "Flexible schedule",
-            "fact2": "Access to a wide range of resources",
-            "fact3": "Learning at your own pace"
+            "fact1": "Helps them focus on studies without distractions",
+            "fact2": "Encourages face-to-face social skills",
+            "fact3": "Reduces risks of excessive screen time and online dangers"
           },
           "Against": {
-            "fact1": "Lack of personal interaction",
-            "fact2": "Possible distractions at home",
-            "fact3": "Limited hands-on experience"
+            "fact1": "Smartphones help children learn and access educational content",
+            "fact2": "They provide a way for parents to communicate with their children",
+            "fact3": "Allowing smartphones at a younger age can help children learn digital skills early"
           }
         }
       ],
-      "prepareTime": 60,
-      "answerTime": 120
+      "prepareTime": 6,
+      "answerTime": 12
     }
   ]
 }

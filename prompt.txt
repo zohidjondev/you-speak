@@ -1,0 +1,25 @@
+Can you generate several mock test for new CEFR speaking format:
+
+Part 1.1
+"A few questions about yourself" (meant the CEFR speaking session taker)
+- 30 seconds to answer 
+- 3 questions. Very Easy questions and not long questions that are suitable for part 1.1 and not hard.
+
+Part 1.2
+Briefly about the part: You will now see 2 pictures. You need to answer some questions based on these pictures" 
+- 30 seconds to answer.
+- 3 questions (not separately 3 questions for each image, but generally 3 questions for 2 images).  
+- And please describe the images so that I could find them on internet and answer to your question.  
+
+Part 2
+Briefly about the part: In this part you will be given a picture followed by 3 questions. You do not need to describe 
+the pictures. But focus on provided questions. 
+- 2 minutes to answer. 
+
+Part 3
+Briefly about the part: You are not given a statement to discuss. You will need to speak both sides of argument.
+- 3 facts for 'For' and 3 facts for 'Against'. Facts are short and simple. 
+- 2 minutes to speak. 
+
+- 1 minute to prepare for the questions
+- 2 minutes to answer.
