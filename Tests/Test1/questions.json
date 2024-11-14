@@ -2,8 +2,8 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 2,
-      "answerTime": 3,
+      "prepareTime": 12,
+      "answerTime": 30,
       "questions": [
         { "question1Part1.1": "What kind of music do you like to listen to?" },
         {
@@ -17,8 +17,8 @@
     {
       "part": "Part 1.2",
       "images": ["1.avif", "2.jpg"],
-      "prepareTime": 2,
-      "answerTime": 3,
+      "prepareTime": 12,
+      "answerTime": 45,
       "questions": [
         {
           "question1Part1.2": "How do these two places make you feel, and which one would you prefer for studying?"
@@ -34,8 +34,8 @@
     {
       "part": "Part 2",
       "images": ["3.avif"],
-      "prepareTime": 6,
-      "answerTime": 12,
+      "prepareTime": 60,
+      "answerTime": 120,
       "questions": [
         {
           "question1Part2": "What benefits do you think these people get from spending time outdoors in nature?"
@@ -66,8 +66,8 @@
           }
         }
       ],
-      "prepareTime": 6,
-      "answerTime": 12
+      "prepareTime": 60,
+      "answerTime": 120
     }
   ]
 }
