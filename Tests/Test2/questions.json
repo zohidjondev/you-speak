@@ -1,0 +1,73 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 2,
+      "answerTime": 3,
+      "questions": [
+        { "question1Part1.1": "What do you usually do on a typical day?" },
+        {
+          "question2Part1.1": "What is your favorite hobby, and why do you enjoy it?"
+        },
+        {
+          "question3Part1.1": "Do you prefer spending time indoors or outdoors? Why?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["image1.jpg", "image2.jpg"],
+      "prepareTime": 2,
+      "answerTime": 3,
+      "questions": [
+        {
+          "question1Part1.2": "What do you think these people in the pictures enjoy doing in their free time?"
+        },
+        {
+          "question2Part1.2": "How do the environments in these images affect the mood of the people in them?"
+        },
+        {
+          "question3Part1.2": "Which of the two environments would you prefer to spend time in and why?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["image3.jpg"],
+      "prepareTime": 6,
+      "answerTime": 12,
+      "questions": [
+        {
+          "question1Part2": "How do you think working from home can affect a person’s productivity?"
+        },
+        {
+          "question1Part2": "What are the advantages and disadvantages of working from home compared to working in an office?"
+        },
+        {
+          "question1Part2": "How do you think the work-from-home trend will change in the future?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Social media is having a negative effect on society.",
+          "For": {
+            "fact1": "Social media can lead to social isolation, as people spend more time online than with real-life interactions.",
+            "fact2": "It can contribute to mental health issues, such as anxiety and depression, due to comparison and cyberbullying.",
+            "fact3": ""
+          },
+          "Against": {
+            "fact1": "Social media connects people across the world, helping them stay in touch with family, friends, and communities.",
+            "fact2": "It can be a platform for learning and self-expression, offering opportunities to share knowledge and creativity.",
+            "fact3": ""
+          }
+        }
+      ],
+      "prepareTime": 6,
+      "answerTime": 12
+    }
+  ]
+}

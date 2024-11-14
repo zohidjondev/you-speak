@@ -1,0 +1,76 @@
+// -r means that these audios and played are standard and are always shown in each test besides their questions.json structure
+// -o means that these labels mostly will change from test to test such as questions and images
+
+------------------------------------------------------------------------
+-r Display: "Multilevel Exam, New Speaking Test".
+-r Display:"Can you tell me your full name please? "
+
+-r Display: "Thank you"
+
+-r Display: "Your exam starts in 10 seconds!"
+- Set timer for 10 seconds and display the countdown
+-r Label: "Please prepare!"
+------------------------------------------------------------------------
+-r Display: "Part 1.1"
+-r Display: "in this part, I will ask you a few questions about yourself."
+-r Display: "For each question, you will have 30 seconds to answer."
+-r Display: "You should speak after this sound. {play 'special' sound}"
+
+Part 1.1
+-o Display: {question1}
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 30 seconds and display the countdown for answer
+
+-o Display: {question2}
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 30 seconds and display the countdown for answer
+
+-o Display: {question3}
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 30 seconds and display the countdown for answer
+
+------------------------------------------------------------------------
+-r Display: "Part 1.2"
+-r Display: "You will now see 2 pictures"
+-r Display: "You need to answer some questions based on these pictures. "
+-r Display: "You will have 45 seconds to answer each question. "
+-r Display: "You should speak after this sound. {play 'special' sound}"
+
+-o Label: 'Show 2 images next to each other and {question1}'
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 45 seconds and display the countdown for answer
+-o Label: 'Show 2 images next to each other and {question2}'
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 45 seconds and display the countdown for answer
+-o Label: 'Show 2 images next to each other and {question3}'
+- Set timer for 10 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 45 seconds and display the countdown for answer
+
+------------------------------------------------------------------------
+-r Display: "Part 2"
+-r Display: "You will be given a picture followed by 3 questions. "
+-r Display: "You do not need to describe the picture, but focus on the questions provided. "
+-r Display: "You will have 1 minute to prepare for the questions and 2 minutes to answer them."
+-r Display: "You should speak after this sound. {play 'special' sound}"
+
+You should show one image in screen and 3 questions under it in list style.
+- Set timer for 60 seconds and display the countdown to prepare
+-r play 'special' sound
+- Set timer for 120 seconds and display the countdown for answer
+
+------------------------------------------------------------------------
+-r Display: "Part 3"
+-r Display: "You will be given a statement to discuss."
+-r Display: "You will need to speak about both sides of the argument."
+-r Display: "You will have 1 minute to prepare for the task and 2 minutes to speak."
+-r Display: "You should speak after this sound. {play 'special' sound}"
+
+Show the data in table html. The header of 2-column-table make a main statement. In left columns the 3 facts ni list should be displayed with the title 'For', and for the other one too but title is 'Against' with followed 3 facts in list style"
+
+-r Display: "This is the end of the Speaking Test. "

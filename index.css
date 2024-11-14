@@ -1,0 +1,312 @@
+@font-face {
+  font-family: Google;
+  src: url(Google-Sans-Font/GoogleSans-Medium.ttf);
+} /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google", sans-serif;
+  transition: all 300ms ease;
+}
+
+body {
+  background-color: #292929;
+  color: #f1efe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#logo h1 {
+  font-size: 24px;
+  color: #f1efe7;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #292929;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Menu icon styles */
+.menu-icon {
+  display: none;
+  color: #f1efe7;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul.nav-links li a {
+  color: #f1efe7;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+ul.nav-links li a:hover {
+  background-color: #ffcc00;
+  color: #292929;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  width: 100%;
+  background-image: url("hero-bg.jpg"); /* Replace with the path to your hero background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1efe7;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 0.3 opacity */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Bright white text */
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Bright white text */
+}
+
+.hero-content button {
+  background-color: #ffcc00;
+  color: #292929;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.hero-content button:hover {
+  background-color: #f1efe7;
+  color: #454545;
+}
+
+.button {
+  background-color: #ffcc00;
+  color: #292929;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f1efe7;
+  color: #454545;
+}
+
+/* Telegram Section */
+#join-telegram {
+  position: relative;
+  width: 100%;
+  background-image: url("telgram-bg.avif"); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: #f1efe7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+#join-telegram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 0.7 opacity */
+  z-index: 1;
+}
+
+.telegram-content {
+  text-align: center;
+  max-width: 600px;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+
+.telegram-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ffffff; /* Bright white text */
+}
+
+.telegram-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #ffffff; /* Bright white text */
+}
+
+.telegram-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0088cc;
+  color: #f1efe7;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.telegram-link i {
+  margin-right: 8px;
+}
+
+.telegram-link:hover {
+  background-color: #006699;
+}
+/* About Section */
+#about {
+  width: 100%;
+  background-color: #333333;
+  padding: 40px 20px;
+  color: #f1efe7;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 1000px; /* Limit the text width for better readability */
+  margin: auto;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #292929;
+  padding: 20px;
+  color: #f1efe7;
+  text-align: center;
+  max-width: 1200px;
+  font-size: 16px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  color: #f1efe7;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer .footer-links a:hover {
+  color: #ffcc00; /* Hover color for footer links */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+/* Media Queries */
+@media (max-width: 992px) {
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  .telegram-content h2 {
+    font-size: 28px;
+  }
+
+  .telegram-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .telegram-content h2 {
+    font-size: 24px;
+  }
+
+  .telegram-link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

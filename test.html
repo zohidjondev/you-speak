@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test | SC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="start-menu" style="text-align: center; padding: 20px">
+      <h2 style="font-size: 24px; margin-bottom: 20px">Select a Test</h2>
+      <div
+        id="button-container"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          gap: 10px;
+          max-height: 80vh;
+          overflow-y: auto;
+          padding: 10px;
+          width: 100%;
+          justify-items: center;
+        "
+      >
+        <button class="testButton">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Home Page</a
+          >
+        </button>
+        <button onclick="startTest('Test1')" class="testButton">Test 1</button>
+        <button onclick="startTest('Test2')" class="testButton">Test 2</button>
+      </div>
+    </div>
+
+    <div id="test-container" class="hidden">
+      <div id="timer-container">
+        <div id="timer"></div>
+      </div>
+      <div id="instruction-container">
+        <div id="instruction">Answer the question</div>
+      </div>
+      <div id="question-container">
+        <div id="question-display"></div>
+      </div>
+      <div id="image-container">
+        <div id="image-display"></div>
+      </div>
+      <div id="main-message"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

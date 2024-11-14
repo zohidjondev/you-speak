@@ -1,0 +1,69 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        { "question1Part1.1": "What do you enjoy doing in your free time?" },
+        {
+          "question2Part1.1": "Do you prefer spending time alone or with friends? Why?"
+        },
+        { "question3Part1.1": "Can you describe your typical day at school?" }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["image1.jpg", "image2.jpg"],
+      "prepareTime": 10,
+      "answerTime": 45,
+      "questions": [
+        {
+          "question1Part1.2": "What differences do you notice between the two scenes?"
+        },
+        {
+          "question2Part1.2": "Which place would you prefer to spend time in? Why?"
+        },
+        {
+          "question3Part1.2": "How do you think these places affect the people who visit them?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["image3.jpeg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "What do you think the person might be working on?"
+        },
+        { "question1Part2": "How might the environment of this office affect their productivity?" },
+        {
+          "question1Part2": "How does working in an office compare to working from home?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Online learning vs. traditional classroom learning.",
+          "For": {
+            "fact1": "Flexible schedule",
+            "fact2": "Access to a wide range of resources",
+            "fact3": "Learning at your own pace"
+          },
+          "Against": {
+            "fact1": "Lack of personal interaction",
+            "fact2": "Possible distractions at home",
+            "fact3": "Limited hands-on experience"
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}
