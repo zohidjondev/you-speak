@@ -56,17 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
       this.timer = new TestTimer(this.timerDisplay, this.instructionDisplay);
 
       // Audios
-      this.specialSound = new Audio("special.mp3");
-      this.startingExamSound = new Audio("starting(MultilevelExam).mp3");
-      this.sayYourName = new Audio("tellYourFullName.mp3");
-      this.thankYou = new Audio("ThankYou.mp3");
-      this.yourExamStartsAudio = new Audio("yourExamStartsin10seconds.mp3");
+      this.specialSound = new Audio("Audios/special.mp3");
+      this.startingExamSound = new Audio("Audios/starting(MultilevelExam).mp3");
+      this.sayYourName = new Audio("Audios/tellYourFullName.mp3");
+      this.thankYou = new Audio("Audios/ThankYou.mp3");
+      this.yourExamStartsAudio = new Audio(
+        "Audios/yourExamStartsin10seconds.mp3"
+      );
 
       this.introAudios = {
-        "Part 1.1": new Audio("part1.1.mp3"),
-        "Part 1.2": new Audio("part1.2.mp3"),
-        "Part 2": new Audio("part2.mp3"),
-        "Part 3": new Audio("part3.mp3"),
+        "Part 1.1": new Audio("Audios/part1.1.mp3"),
+        "Part 1.2": new Audio("Audios/part1.2.mp3"),
+        "Part 2": new Audio("Audios/part2.mp3"),
+        "Part 3": new Audio("Audios/part3.mp3"),
       };
     }
     playAudio(audio) {
@@ -136,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.timer.start(10, "", () => this.nextPart());
           }, 2000);
         }, 5000);
-      }, 4000);
+      }, 7000);
     }
 
     nextPart() {
@@ -319,10 +321,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const testController = new TestController();
   window.startTest = testController.startTest.bind(testController);
 
-  testNames.forEach((testName) => {
-    const button = document.createElement("button");
-    button.textContent = testName;
-    button.onclick = () => startTest(testName);
-    buttonContainer.appendChild(button);
-  });
+  // testNames.forEach((testName) => {
+  //   const button = document.createElement("button");
+  //   button.textContent = testName;
+  //   button.onclick = () => startTest(testName);
+  //   buttonContainer.appendChild(button);
+  // });
 });

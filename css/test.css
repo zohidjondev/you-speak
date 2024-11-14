@@ -1,7 +1,7 @@
 @font-face {
   font-family: Google;
-  src: url(Google-Sans-Font/GoogleSans-Medium.ttf);
-}
+  src: url(fonts/GoogleSans/GoogleSans-Medium.ttf);
+} /* General Styles */  
 
 * {
   font-family: Google;
