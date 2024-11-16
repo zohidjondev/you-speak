@@ -1,0 +1,75 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 1,
+      "answerTime": 3,
+      "questions": [
+        {
+          "question1Part1.1": "What is your favorite hobby, and why do you enjoy it?"
+        },
+        {
+          "question2Part1.1": "Do you work or study?"
+        },
+        {
+          "question3Part1.1": "What do you do in your free time?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.jpg"],
+      "prepareTime": 1,
+      "answerTime": 4,
+      "questions": [
+        {
+          "question1Part1.2": "How are these two situations similar?"
+        },
+        {
+          "question2Part1.2": "What do you think makes these situations enjoyable?"
+        },
+        {
+          "question3Part1.2": "If you could choose, which situation would you prefer and why?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.avif"],
+      "prepareTime": 6,
+      "answerTime": 12,
+      "questions": [
+        {
+          "question1Part2": "What are the advantages of using smartphones?"
+        },
+        {
+          "question1Part2": "What are the disadvantages of using smartphones?"
+        },
+        {
+          "question1Part2": "How can we use smartphones in a more mindful way?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Should schools require students to wear uniforms?",
+          "For": {
+            "fact1": "Uniforms can reduce bullying and peer pressure.",
+            "fact2": "Uniforms can help students focus on their studies",
+            "fact3": "Uniforms can create a sense of unity and school spirit"
+          },
+          "Against": {
+            "fact1": "Uniforms can stifle individuality and self-expression",
+            "fact2": "Uniforms can be expensive for families",
+            "fact3": "Uniforms may not be practical for all activities"
+          }
+        }
+      ],
+      "prepareTime": 6,
+      "answerTime": 12
+    }
+  ]
+}

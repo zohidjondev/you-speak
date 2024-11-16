@@ -255,6 +255,25 @@ table td {
 #question-container h2 {
   font-size: 3rem;
 }
+.new-btn-label {
+  position: relative;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.new-btn-label::after {
+  content: "NEW";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red; /* Label background color */
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
 
 /* Footer */
 footer {

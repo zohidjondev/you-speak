@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.timer.start(10, "", () => this.nextPart());
           }, 2000);
         }, 5000);
-      }, 7000);
+      }, 3500);
     }
 
     nextPart() {

@@ -1,0 +1,75 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.1": "What do you like to do in the mornings?"
+        },
+        {
+          "question2Part1.1": "Do you enjoy reading books? Why or why not?"
+        },
+        {
+          "question3Part1.1": "What kind of music do you like?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.jpg"],
+      "prepareTime": 10,
+      "answerTime": 45,
+      "questions": [
+        {
+          "question1Part1.2": "What do these images tell you about how people spend their free time?"
+        },
+        {
+          "question2Part1.2": "Which place would you prefer to spend time in? Why?"
+        },
+        {
+          "question3Part1.2": "How do these places make you feel?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.jpeg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "What makes city life exciting for people?"
+        },
+        {
+          "question1Part2": "What are some challenges of living in a busy city?"
+        },
+        {
+          "question1Part2": "How can cities become more enjoyable for everyone?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Car ownership is useful, but it's bad for the environment",
+          "For": {
+            "fact1": "Cars help people travel quickly and easily.",
+            "fact2": "They are essential for areas with poor public transport",
+            "fact3": "Cars allow for flexibility in planning trips"
+          },
+          "Against": {
+            "fact1": "Cars produce harmful emissions that pollute the air",
+            "fact2": "Traffic jams cause stress and waste time",
+            "fact3": "Public transport is often more eco-friendly"
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}
