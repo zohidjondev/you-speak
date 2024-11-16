@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-family: "Google", sans-serif;
   transition: all 300ms ease;
-  user-select: #fff;
 }
 
 *::selection {

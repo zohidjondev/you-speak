@@ -11,6 +11,10 @@
   box-sizing: border-box;
   font-family: "Google", sans-serif;
   transition: all 300ms ease;
+  *::selection {
+    background-color: #ffcc00;
+    color: #292929;
+  }
 }
 
 body {
@@ -41,6 +45,23 @@ button:hover,
 .testButton:hover {
   background-color: #f1efe7;
   color: #454545;
+}
+ul.nav-links {
+  list-style: none;
+  gap: 20px;
+}
+
+ul.nav-links li a {
+  color: #f1efe7;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+ul.nav-links li a:hover {
+  background-color: #ffcc00;
+  color: #292929;
 }
 .transparent {
   color: #292929;
@@ -155,23 +176,41 @@ h2 {
 header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 1200px;
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
   z-index: 1000;
-}
-
-header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header #logo h1 {
   font-size: 20px;
+  user-select: none;
+  text-align: justify;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #292929;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links {
@@ -179,6 +218,7 @@ header #logo h1 {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-links a {
