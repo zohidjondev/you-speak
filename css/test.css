@@ -1,120 +1,105 @@
+/* Fonts */
 @font-face {
   font-family: Google;
   src: url(fonts/GoogleSans/GoogleSans-Medium.ttf);
-} /* General Styles */  
+}
 
+/* General Styles */
 * {
-  font-family: Google;
-  transition: all ease 300ms;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google", sans-serif;
+  transition: all 300ms ease;
 }
 
 body {
   background-color: #292929;
   color: #f1efe7;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  margin: 0;
+  overflow-x: hidden;
 }
 
-#start-menu {
-  text-align: center;
-}
-
-#test-container {
-  text-align: left;
-  width: 1100px;
-  margin: auto;
-}
-
-button {
+/* Shared Button Styles */
+button,
+.testButton {
   background-color: #454545;
   color: #f1efe7;
   border: none;
   padding: 12px 24px;
-  margin: 8px;
-  cursor: pointer;
   font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover,
+.testButton:hover {
   background-color: #f1efe7;
   color: #454545;
 }
+.transparent {
+  color: #292929;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
 
-/* Part Indicator Styles */
-#part-indicator {
+/* Layout Containers */
+#start-menu,
+#test-container,
+#instruction-container,
+#timer-container {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.part-label {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 18px;
-  background-color: #ffffff;
-  color: #292929;
-  border-radius: 5px;
+#test-container {
+  width: 90%;
+  max-width: 1100px;
 }
 
-.part-label.active {
-  background-color: #ffffff;
-  color: #292929;
-}
-
-/* Timer Styles */
 #timer-container {
   background-color: #1f1f1f;
-  text-align: center;
   font-size: 40px;
-  color: #ffffff;
+  color: #ffcc00;
 }
 
 #instruction-container {
   background-color: #333333;
   font-size: 24px;
-  color: #ffffff;
 }
 
 /* Question Styles */
-#question-container {
+#question-container,
+#image-container {
   background-color: #292929;
   padding: 20px;
   font-size: 34px;
-  line-height: 1;
+  line-height: 1.2;
   color: #e0e0e0;
+}
+
+#image-container {
+  text-align: center;
 }
 
 /* Image Styles */
-#image-container {
-  background-color: #292929;
-  padding: 10px;
-  text-align: center;
-  color: #e0e0e0;
-}
-
 .image-side-by-side {
-  width: 48%;
-  margin: 1%;
-  max-height: 350px;
+  width: 100%;
   object-fit: contain;
-}
-
-/* End Screen Message */
-#main-message {
-  font-size: 36px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.hidden {
-  display: none;
+  margin: 10px 0;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 20px;
 }
 
 img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -129,51 +114,186 @@ img {
   padding: 10px 20px;
   margin: 0 5px;
   font-size: 18px;
-  background-color: #454545; /* Default gray */
+  background-color: #454545;
   color: #f1efe7;
   border-radius: 5px;
 }
 
 .part-label.active {
-  background-color: #ffffff; /* Yellow for the active part */
+  background-color: #ffffff;
   color: #292929;
 }
 
-#test-container {
+/* End Screen */
+#main-message {
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Visibility Helper */
+.hidden {
+  display: none;
+}
+
+/* Button Container */
+#button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Typography */
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header #logo h1 {
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+main {
+  flex: 1;
+  margin: 60px 0 40px;
+  padding: 20px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Space between elements */
-  padding: 20px;
-  max-width: 1100px; /* Constrain to 900px as needed */
-  margin: 0 auto; /* Center container */
 }
 
-.image-side-by-side {
-  display: flex;
-  /* columns: 2; */
-  max-width: 90%;
-  width: 400px;
-  height: auto;
-  margin: 10px;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.part2-questions {
-  font-size: 2rem; /* Adjust the size as needed */
-  /* line-height: 1.5; */
-  margin-bottom: 10px;
-}
-
-.testButton {
-  background-color: #454545;
-  color: #f1efe7;
-  border: none;
-  padding: 12px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: #f1efe7;
+}
+
+table th,
+table td {
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 1px solid #454545;
+  text-align: left;
+}
+
+#question-container h2 {
+  font-size: 3rem;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+  body {
+    height: auto;
+    padding: 10px;
+  }
+
+  header #logo h1 {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  #timer-container {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #question-container {
+    font-size: 24px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td li {
+    font-size: 0.9rem;
+    text-align: start;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+
+  #question-container h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .image-side-by-side {
+    width: 200%;
+    object-fit: contain;
+    margin: 10px 0;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 20px;
+  }
 }
