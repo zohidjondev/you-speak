@@ -84,14 +84,15 @@ ul.nav-links li a:hover {
 }
 
 #timer-container {
-  background-color: #1f1f1f;
-  font-size: 40px;
+  /* background-color: #1f1f1f; */
+  font-size: 50px;
   color: #ffcc00;
 }
 
 #instruction-container {
   background-color: #333333;
   font-size: 24px;
+  border-radius: 0.9rem;
 }
 
 /* Question Styles */
@@ -187,6 +188,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 header nav {
@@ -265,13 +268,13 @@ table td {
 .new-btn-label::after {
   content: "NEW";
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: -6px;
+  right: -6px;
   background-color: red; /* Label background color */
   color: white;
   font-size: 10px;
   font-weight: bold;
-  padding: 2px 5px;
+  padding: 1px 5px;
   border-radius: 4px;
 }
 
@@ -287,7 +290,22 @@ footer {
   padding: 10px 20px;
   font-size: 14px;
 }
+.part-label {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: gray; /* Default */
+  color: white;
+}
 
+.part-label.in-progress {
+  background-color: green;
+}
+
+.part-label.completed {
+  background-color: yellow;
+}
 /* Media Query for Smaller Screens */
 @media (max-width: 767px) {
   body {
@@ -295,8 +313,19 @@ footer {
     padding: 10px;
   }
 
+  header {
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
+
   header #logo h1 {
     font-size: 16px;
+  }
+
+  #main-message {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
   }
 
   .nav-links {
@@ -310,7 +339,7 @@ footer {
   }
 
   #timer-container {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   footer {
@@ -331,7 +360,7 @@ footer {
   }
 
   td li {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: start;
   }
 

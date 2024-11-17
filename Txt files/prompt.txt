@@ -7,8 +7,8 @@ Part 1.1
 
 Part 1.2
 Briefly about the part: You will now see 2 pictures. You need to answer some questions based on these pictures" 
-- 30 seconds to answer.
-- 5 questions (not separately 3 questions for each image, but generally 3 questions for 2 images).  
+- The first question is always 'Describe what you see in these 2 pictures.'
+- 3 questions (not separately 3 questions for each image, but generally 3 questions for 2 images).  
 - And please describe the images so that I could find them on internet and answer to your question.  
 
 Part 2

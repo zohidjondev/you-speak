@@ -2,8 +2,8 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 10,
-      "answerTime": 30,
+      "prepareTime": 1,
+      "answerTime": 3,
       "questions": [
         {
           "question1Part1.1": "What do you like to do in the mornings?"
@@ -19,11 +19,11 @@
     {
       "part": "Part 1.2",
       "images": ["1.jpg", "2.jpg"],
-      "prepareTime": 10,
-      "answerTime": 45,
+      "prepareTime": 1,
+      "answerTime": 4,
       "questions": [
         {
-          "question1Part1.2": "Describe what you see in these 2 pictures."
+          "question1Part1.2": "What do these images tell you about how people spend their free time?"
         },
         {
           "question2Part1.2": "Which place would you prefer to spend time in? Why?"
@@ -36,8 +36,8 @@
     {
       "part": "Part 2",
       "images": ["3.jpeg"],
-      "prepareTime": 60,
-      "answerTime": 120,
+      "prepareTime": 6,
+      "answerTime": 12,
       "questions": [
         {
           "question1Part2": "What makes city life exciting for people?"
@@ -68,8 +68,8 @@
           }
         }
       ],
-      "prepareTime": 60,
-      "answerTime": 120
+      "prepareTime": 6,
+      "answerTime": 12
     }
   ]
 }

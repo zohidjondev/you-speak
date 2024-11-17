@@ -8,13 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     start(duration, label, callback, hideTimer = false) {
-      this.instructionDisplay.textContent = label;
-
-      // Clear or show the timer display based on the hideTimer flag
-      if (hideTimer) {
-        this.timerDisplay.textContent = "";
-      } else {
+      if (!hideTimer) {
+        this.instructionDisplay.textContent = label;
         this.updateTimerDisplay(duration);
+      } else {
+        this.instructionDisplay.textContent = ""; // Clear label for hidden timer
+        this.timerDisplay.textContent = "";
       }
 
       if (!hideTimer) {
@@ -54,12 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
       this.currentQuestionIndex = 0;
       this.data = null;
       this.timer = new TestTimer(this.timerDisplay, this.instructionDisplay);
+      this.skipButton = document.getElementById("skip-button");
+
+      // Attach event listener to the skip button
+      this.skipButton.addEventListener("click", () => {
+        this.skipIntro();
+      });
 
       // Audios
       this.specialSound = new Audio("Audios/special.mp3");
       this.startingExamSound = new Audio("Audios/starting(MultilevelExam).mp3");
       this.sayYourName = new Audio("Audios/tellYourFullName.mp3");
       this.thankYou = new Audio("Audios/ThankYou.mp3");
+      this.endAnswerTimeAudio = new Audio("Audios/time-is-up.mp3");
+      this.endExamAudio = new Audio("Audios/endExam.mp3");
       this.yourExamStartsAudio = new Audio(
         "Audios/yourExamStartsin10seconds.mp3"
       );
@@ -71,18 +78,34 @@ document.addEventListener("DOMContentLoaded", () => {
         "Part 3": new Audio("Audios/part3.mp3"),
       };
     }
+
     playAudio(audio) {
       return new Promise((resolve) => {
         audio.play().catch(() => {});
         audio.onended = resolve;
       });
     }
+
+    skipIntro() {
+      if (this.currentAudio) {
+        this.currentAudio.pause(); // Pause current audio
+        this.currentAudio.currentTime = 0; // Reset playback to start
+      }
+
+      // Stop any ongoing audio promises
+      this.audioSkipped = true;
+
+      // Hide skip button and move directly to the next part
+      this.skipButton.classList.add("hidden");
+      this.displayPart(this.data.parts[this.currentPartIndex]);
+    }
+
     async playIntroForPart(part, callback) {
       const introText = {
         "Part 1.1":
           "Part 1.1. In this part, I will ask you a few questions about yourself. For each question, you will have 30 seconds to answer. You should speak after this sound.",
         "Part 1.2":
-          "Part 1.2. You will now see 2 pictures. You need to answer some questions based on these pictures. You will have 45 seconds to answer each question. You should speak after this sound.",
+          "Part 1.2. You will now see 2 pictures. You need to answer some questions based on these pictures. You will have 30 seconds to answer each question. You should speak after this sound.",
         "Part 2":
           "Part 2. You will be given a picture followed by 3 questions. You do not need to describe the picture, but focus on the questions provided. You will have 1 minute to prepare for the questions and 2 minutes to answer them. You should speak after this sound.",
         "Part 3":
@@ -92,18 +115,45 @@ document.addEventListener("DOMContentLoaded", () => {
       const audio = this.introAudios[part];
       const text = introText[part] || "Get ready for the next part.";
 
-      // Display intro message and clear "Answer the question" label
+      // Reset skip state
+      this.audioSkipped = false;
+
+      // Hide the timer and clear the instruction label for intros
+      this.timerDisplay.textContent = "";
+      this.instructionDisplay.textContent = "";
+
+      // Display skip button
+      this.skipButton.classList.remove("hidden");
+
+      // Display intro message
       this.displayMessage(text);
-      this.instructionDisplay.textContent = ""; // Clear label for intros
 
-      // Play the intro audio
-      await this.playAudio(audio);
+      // Play audio and special sound sequentially
+      try {
+        this.currentAudio = audio;
 
-      // Play the special sound
-      await this.playAudio(this.specialSound);
+        // Play intro audio
+        await this.playAudio(audio);
 
-      // Call the callback after all sounds have played
-      callback();
+        // If skipped during audio, stop further processing
+        if (this.audioSkipped) return;
+
+        // Play special sound
+        this.currentAudio = this.specialSound;
+        await this.playAudio(this.specialSound);
+
+        // If skipped during audio, stop further processing
+        if (this.audioSkipped) return;
+
+        // Call the callback after sounds complete
+        callback();
+      } catch (err) {
+        console.error("Audio playback interrupted or skipped.");
+      } finally {
+        // Hide the skip button after the intro
+        this.skipButton.classList.add("hidden");
+        this.currentAudio = null;
+      }
     }
 
     startTest(testName) {
@@ -162,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     displayPart(part) {
       // Clear previous images and questions when a new part starts
       this.clearImagesAndQuestions();
+      this.skipButton.classList.add("hidden"); // Ensure the skip button is hidden
 
       if (["Part 2", "Part 3"].includes(part.part)) {
         this.mainMessage.textContent = "";
@@ -213,9 +264,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const question = part.questions[this.currentQuestionIndex];
       this.displayMessage(Object.values(question)[0]);
+
+      let answerTime = part.answerTime;
+      if (part.part === "Part 1.2" && this.currentQuestionIndex === 0) {
+        answerTime = 45; // Set 45 seconds for the first question
+      }
+
       this.timer.start(part.prepareTime, "Please prepare!", () => {
         this.specialSound.play();
-        this.timer.start(part.answerTime, "Answer the question", () => {
+
+        // Start the answer time with the determined duration
+        this.timer.start(answerTime, "Answer the question", () => {
+          this.endAnswerTimeAudio.play(); // Play the audio when answer time finishes
           this.currentQuestionIndex++;
           this.nextQuestion(part);
         });
@@ -237,10 +297,11 @@ document.addEventListener("DOMContentLoaded", () => {
     displayQuestions(questions) {
       // Clear previous questions
       this.questionDisplay.innerHTML = "";
-      // Append new questions
-      this.questionDisplay.innerHTML = questions
-        .map((q) => `<p class="part2-questions">${Object.values(q)[0]}</p>`)
+      // Append new questions as a list
+      const questionList = questions
+        .map((q) => `<li style="text-align: left;">${Object.values(q)[0]}</li>`)
         .join("");
+      this.questionDisplay.innerHTML = `<ul>${questionList}</ul>`;
     }
 
     displayArgumentTable(argument) {
@@ -287,6 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
       this.timer.start(part.prepareTime, "Please prepare!", () => {
         this.specialSound.play();
         this.timer.start(part.answerTime, "Answer", () => {
+          this.endAnswerTimeAudio.play(); // Play the audio when answer time finishes
           this.currentPartIndex++;
           this.nextPart();
         });
@@ -301,7 +363,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("image-container").classList.add("hidden");
 
       // Show end screen message
-      this.displayMessage("This is the end of the Speaking Test. Thank you!");
+      this.displayMessage("This is the end of the Speaking Test.");
+      this.endAnswerTimeAudio.play().catch(() => {});
 
       // Create the 'Go to Home' button dynamically
       const endButton = document.createElement("button");
@@ -320,11 +383,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const testController = new TestController();
   window.startTest = testController.startTest.bind(testController);
-
-  // testNames.forEach((testName) => {
-  //   const button = document.createElement("button");
-  //   button.textContent = testName;
-  //   button.onclick = () => startTest(testName);
-  //   buttonContainer.appendChild(button);
-  // });
 });

@@ -2,8 +2,8 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 1,
-      "answerTime": 3,
+      "prepareTime": 10,
+      "answerTime": 30,
       "questions": [
         {
           "question1Part1.1": "What is your favorite hobby, and why do you enjoy it?"
@@ -19,14 +19,14 @@
     {
       "part": "Part 1.2",
       "images": ["1.jpg", "2.jpg"],
-      "prepareTime": 1,
-      "answerTime": 4,
+      "prepareTime": 10,
+      "answerTime": 45,
       "questions": [
         {
-          "question1Part1.2": "How are these two situations similar?"
+          "question1Part1.2": "Describe what you see in these 2 pictures."
         },
         {
-          "question2Part1.2": "What do you think makes these situations enjoyable?"
+          "question2Part1.2": "How are these two situations similar?"
         },
         {
           "question3Part1.2": "If you could choose, which situation would you prefer and why?"
@@ -36,8 +36,8 @@
     {
       "part": "Part 2",
       "images": ["3.avif"],
-      "prepareTime": 6,
-      "answerTime": 12,
+      "prepareTime": 60,
+      "answerTime": 120,
       "questions": [
         {
           "question1Part2": "What are the advantages of using smartphones?"
@@ -68,8 +68,8 @@
           }
         }
       ],
-      "prepareTime": 6,
-      "answerTime": 12
+      "prepareTime": 60,
+      "answerTime": 120
     }
   ]
 }
