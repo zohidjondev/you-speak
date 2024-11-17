@@ -1,0 +1,75 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.1": "What time do you usually wake up in the morning?"
+        },
+        {
+          "question2Part1.1": "Do you prefer tea or coffee?"
+        },
+        {
+          "question3Part1.1": "What do you usually do in the evenings?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.jpeg"],
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these two pictures."
+        },
+        {
+          "question2Part1.2": "Which activity shown here seems more relaxing, and why?"
+        },
+        {
+          "question3Part1.2": "How might these two places be important for travelers?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.avif"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "What makes a teacher good at their job?"
+        },
+        {
+          "question1Part2": "How important is the environment for learning?"
+        },
+        {
+          "question1Part2": "Do you think traditional classrooms will change in the future?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Homework should be banned in schools",
+      "questions": [
+        {
+          "statement": "People should work four days a week instead of five ",
+          "For": {
+            "fact1": "Better work-life balance",
+            "fact2": "Increased productivity",
+            "fact3": "Improved mental health"
+          },
+          "Against": {
+            "fact1": "Deadlines might be harder to meet",
+            "fact2": "Businesses could lose profits",
+            "fact3": "Customers may face longer wait times for services"
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

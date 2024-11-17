@@ -262,6 +262,66 @@ ul.nav-links li a:hover {
   margin-bottom: 10px;
 }
 
+/* Why Practice Section */
+#why-practice {
+  position: relative;
+  width: 100%;
+  background-image: url("../images/whySelectUs.avif"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: #f1efe7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+#why-practice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+.why-content {
+  text-align: center;
+  max-width: 800px;
+  z-index: 2; /* Content above the overlay */
+}
+
+.why-content h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 36px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
 /* Footer */
 footer {
   width: 100%;

@@ -18,7 +18,7 @@
       "part": "Part 1.2",
       "images": ["1.avif", "2.jpg"],
       "prepareTime": 12,
-      "answerTime": 45,
+      "answerTime": 30,
       "questions": [
         {
           "question1Part1.2": "Describe what you see in these 2 pictures."

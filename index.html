@@ -21,12 +21,10 @@
       <div id="logo">
         <h1>Speaking <span class="transparent">Club</span></h1>
       </div>
-      <!-- Toggle checkbox and label for menu icon -->
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">
         <i class="fas fa-bars"></i>
       </label>
-      <!-- Navigation menu items -->
       <ul class="nav-links">
         <li><a href="test.html">Take Test</a></li>
       </ul>
@@ -41,6 +39,27 @@
           confidence.
         </p>
         <a href="test.html" class="button">Start Test</a>
+      </div>
+    </section>
+
+    <!-- Why Practice Section -->
+    <section id="why-practice">
+      <div class="why-content">
+        <h2>Why Practice on This Platform!</h2>
+        <div class="stats">
+          <div class="stat">
+            <h3><span class="counter" data-target="99">0</span>%</h3>
+            <p>Actual Speaking Test Conditions</p>
+          </div>
+          <div class="stat">
+            <h3>+<span class="counter" data-target="50">0</span></h3>
+            <p>Group Members</p>
+          </div>
+          <div class="stat">
+            <h3>+<span class="counter" data-target="5">0</span></h3>
+            <p>Full Mock Speaking Tests</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -62,6 +81,7 @@
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
       <div class="about-content">
         <h2>About the Project</h2>
@@ -97,5 +117,26 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      // Counter animation script
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".counter");
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const increment = target / 500; // Adjust speed by changing the divisor
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 10); // Update every 10ms
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      });
+    </script>
   </body>
 </html>
