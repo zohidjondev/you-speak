@@ -1,0 +1,73 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 12,
+      "answerTime": 30,
+      "questions": [
+        { "question1Part1.1": "?" },
+        {
+          "question2Part1.1": "?"
+        },
+        {
+          "question3Part1.1": "?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["image1", "image2"],
+      "prepareTime": 12,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these 2 pictures."
+        },
+        {
+          "question2Part1.2": "?"
+        },
+        {
+          "question3Part1.2": "?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["image3"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "?"
+        },
+        {
+          "question1Part2": "?"
+        },
+        {
+          "question1Part2": "?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Statement",
+          "For": {
+            "fact1": "",
+            "fact2": "",
+            "fact3": ""
+          },
+          "Against": {
+            "fact1": "",
+            "fact2": "",
+            "fact3": ""
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

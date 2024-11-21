@@ -1,0 +1,75 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.1": "What is your favorite subject?"
+        },
+        {
+          "question2Part1.1": "Do you prefer studying in the morning or evening?"
+        },
+        {
+          "question3Part1.1": "Do you prefer group study or individual study?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.jpeg"],
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these two pictures."
+        },
+        {
+          "question2Part1.2": "How do the two settings represent different ways of life?"
+        },
+        {
+          "question3Part1.2": "In which environment do you think people are happier, and why?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.jpeg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "Tell me about a sports event you watched."
+        },
+        {
+          "question1Part2": "How did it change your perspective on teamwork?"
+        },
+        {
+          "question1Part2": "Why do sports events bring people together??"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "",
+      "questions": [
+        {
+          "statement": "The Voting Age Should Be Lowered to 16.",
+          "For": {
+            "fact1": "Encourages political engagement at a young age.",
+            "fact2": "16-year-olds are mature enough to make informed decisions.",
+            "fact3": "It reflects the age at which many take on adult responsibilities."
+          },
+          "Against": {
+            "fact1": "16-year-olds lack life experience.",
+            "fact2": "They may be easily influenced by others.",
+            "fact3": "Voting should remain a responsibility for adults."
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

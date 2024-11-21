@@ -1,0 +1,75 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.1": "What is your favorite part of your home?"
+        },
+        {
+          "question2Part1.1": "Is there a garden in your home?"
+        },
+        {
+          "question3Part1.1": "Do you prefer to live in a city or a countryside?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.avif", "2.avif"],
+      "prepareTime": 10,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these two pictures."
+        },
+        {
+          "question2Part1.2": "How do you think working in these places affects the workers' lives?"
+        },
+        {
+          "question3Part1.2": "Which place do you think is more important for people's daily lives, and why?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.png"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "Tell me about a souvenir you brought back from a trip"
+        },
+        {
+          "question1Part2": "How does it remind you of the experience?"
+        },
+        {
+          "question1Part2": "Why do people collect souvenirs?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "",
+      "questions": [
+        {
+          "statement": "College Education Should Be Free for All",
+          "For": {
+            "fact1": "Increases access to higher education.",
+            "fact2": "Reduces student debt.",
+            "fact3": "Contributes to a more educated workforce."
+          },
+          "Against": {
+            "fact1": "High cost for taxpayers.",
+            "fact2": "Could reduce the value of a college degree.",
+            "fact3": "May lead to overcrowding in universities."
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}
