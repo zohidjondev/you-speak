@@ -2,7 +2,7 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 10,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         {
@@ -19,11 +19,11 @@
     {
       "part": "Part 1.2",
       "images": ["1.jpg", "2.jpg"],
-      "prepareTime": 10,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         {
-          "question1Part1.2": "Describe what you see in these 2 pictures."
+          "question1Part1.2": "Describe what you see in these two pictures."
         },
         {
           "question2Part1.2": "How are these two situations similar?"
@@ -43,10 +43,10 @@
           "question1Part2": "What are the advantages of using smartphones?"
         },
         {
-          "question1Part2": "What are the disadvantages of using smartphones?"
+          "question2Part2": "What are the disadvantages of using smartphones?"
         },
         {
-          "question1Part2": "How can we use smartphones in a more mindful way?"
+          "question3Part2": "How can we use smartphones in a more mindful way?"
         }
       ]
     },
@@ -58,13 +58,13 @@
           "statement": "Should schools require students to wear uniforms?",
           "For": {
             "fact1": "Uniforms can reduce bullying and peer pressure.",
-            "fact2": "Uniforms can help students focus on their studies",
-            "fact3": "Uniforms can create a sense of unity and school spirit"
+            "fact2": "Uniforms can help students focus on their studies.",
+            "fact3": "Uniforms can create a sense of unity and school spirit."
           },
           "Against": {
-            "fact1": "Uniforms can stifle individuality and self-expression",
-            "fact2": "Uniforms can be expensive for families",
-            "fact3": "Uniforms may not be practical for all activities"
+            "fact1": "Uniforms can stifle individuality and self-expression.",
+            "fact2": "Uniforms can be expensive for families.",
+            "fact3": "Uniforms may not be practical for all activities."
           }
         }
       ],

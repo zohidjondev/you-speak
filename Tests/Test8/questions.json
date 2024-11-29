@@ -1,0 +1,73 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        { "question1Part1.1": "Where do you live?" },
+        {
+          "question2Part1.1": "Is your hometown a large or small city?"
+        },
+        {
+          "question3Part1.1": "How is the weather in your hometown?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.webp", "2.avif"],
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these 2 pictures."
+        },
+        {
+          "question2Part1.2": "What are the main advantages of online education?"
+        },
+        {
+          "question3Part1.2": "What suggestions would you give to improve education?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["2.jpg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "Tell me about a family member who taught you something?"
+        },
+        {
+          "question1Part2": "How did they change your thinking or behavior?"
+        },
+        {
+          "question1Part2": "What makes learning from family special?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Animal Testing Should Be Banned.",
+          "For": {
+            "fact1": "It is cruel and inhumane.",
+            "fact2": "Alternatives to animal testing exist.",
+            "fact3": "Protects endangered species."
+          },
+          "Against": {
+            "fact1": "Necessary for medical research.",
+            "fact2": "Ensures product safety for humans.",
+            "fact3": "There is no fully reliable alternative yet."
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

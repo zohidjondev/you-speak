@@ -1,0 +1,73 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        { "question1Part1.1": "What is your favorite type of food?" },
+        {
+          "question2Part1.1": "How is the weather in your country?"
+        },
+        {
+          "question3Part1.1": "Do you think people’s food preferences change as they get older?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.jpg"],
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these 2 pictures."
+        },
+        {
+          "question2Part1.2": "What kind of food do you eat?"
+        },
+        {
+          "question3Part1.2": "Why do some people prefer junk food over fresh foods?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.jpg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "Describe a concert or show you attended."
+        },
+        {
+          "question1Part2": "How did it change your mood or perspective?"
+        },
+        {
+          "question1Part2": "Why do live events impact people’s emotions?"
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Physical Education Should Be Mandatory in Schools.",
+          "For": {
+            "fact1": "Promotes a healthy lifestyle.",
+            "fact2": "Helps combat childhood obesity.",
+            "fact3": "Teaches teamwork and discipline."
+          },
+          "Against": {
+            "fact1": "Takes time away from academic subjects.",
+            "fact2": "Not all students are interested in physical activity.",
+            "fact3": "Can lead to injuries."
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

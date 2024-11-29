@@ -2,7 +2,7 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 10,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         {
@@ -19,11 +19,11 @@
     {
       "part": "Part 1.2",
       "images": ["1.jpg", "2.jpg"],
-      "prepareTime": 10,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         {
-          "question1Part1.2": "Describe what you see in these 2 pictures."
+          "question1Part1.2": "Describe what you see in these two pictures."
         },
         {
           "question2Part1.2": "Which place would you prefer to spend time in? Why?"
@@ -43,10 +43,10 @@
           "question1Part2": "What makes city life exciting for people?"
         },
         {
-          "question1Part2": "What are some challenges of living in a busy city?"
+          "question2Part2": "What are some challenges of living in a busy city?"
         },
         {
-          "question1Part2": "How can cities become more enjoyable for everyone?"
+          "question3Part2": "How can cities become more enjoyable for everyone?"
         }
       ]
     },
@@ -55,16 +55,16 @@
       "description": "Argument Discussion",
       "questions": [
         {
-          "statement": "Car ownership is useful, but it's bad for the environment",
+          "statement": "Car ownership is useful, but it's bad for the environment.",
           "For": {
             "fact1": "Cars help people travel quickly and easily.",
-            "fact2": "They are essential for areas with poor public transport",
-            "fact3": "Cars allow for flexibility in planning trips"
+            "fact2": "They are essential for areas with poor public transport.",
+            "fact3": "Cars allow for flexibility in planning trips."
           },
           "Against": {
-            "fact1": "Cars produce harmful emissions that pollute the air",
-            "fact2": "Traffic jams cause stress and waste time",
-            "fact3": "Public transport is often more eco-friendly"
+            "fact1": "Cars produce harmful emissions that pollute the air.",
+            "fact2": "Traffic jams cause stress and waste time.",
+            "fact3": "Public transport is often more eco-friendly."
           }
         }
       ],

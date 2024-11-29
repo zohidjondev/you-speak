@@ -1,0 +1,73 @@
+{
+  "parts": [
+    {
+      "part": "Part 1.1",
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        { "question1Part1.1": "What new hobby would you like to try??" },
+        {
+          "question2Part1.1": "How often do you travel?"
+        },
+        {
+          "question3Part1.1": "Do you prefer traveling by plane, train, or car?"
+        }
+      ]
+    },
+    {
+      "part": "Part 1.2",
+      "images": ["1.jpg", "2.webp"],
+      "prepareTime": 8,
+      "answerTime": 30,
+      "questions": [
+        {
+          "question1Part1.2": "Describe what you see in these 2 pictures."
+        },
+        {
+          "question2Part1.2": "What are the advantages of reading e-books?"
+        },
+        {
+          "question3Part1.2": "Do you think paper books will som day disappear?"
+        }
+      ]
+    },
+    {
+      "part": "Part 2",
+      "images": ["3.jpg"],
+      "prepareTime": 60,
+      "answerTime": 120,
+      "questions": [
+        {
+          "question1Part2": "Tell me about an activity you do with your family."
+        },
+        {
+          "question1Part2": "How does it affect your relationships?"
+        },
+        {
+          "question1Part2": "Why are family activities important? "
+        }
+      ]
+    },
+    {
+      "part": "Part 3",
+      "description": "Argument Discussion",
+      "questions": [
+        {
+          "statement": "Homework Should Be Banned in Schools. ",
+          "For": {
+            "fact1": "Allows students more free time for hobbies and family.",
+            "fact2": "Reduces stress and burnout.",
+            "fact3": "Encourages more productive in-class learning."
+          },
+          "Against": {
+            "fact1": "Reinforces learning outside of school hours.",
+            "fact2": "Helps students develop time management skills.",
+            "fact3": "Prepares students for exams and assessments."
+          }
+        }
+      ],
+      "prepareTime": 60,
+      "answerTime": 120
+    }
+  ]
+}

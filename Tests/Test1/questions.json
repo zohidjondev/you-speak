@@ -2,33 +2,23 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 12,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         { "question1Part1.1": "What kind of music do you like to listen to?" },
-        {
-          "question2Part1.1": "What is your favorite meal of the day?"
-        },
-        {
-          "question3Part1.1": "Can you describe a place you like to visit often?"
-        }
+        { "question2Part1.1": "What is your favorite meal of the day?" },
+        { "question3Part1.1": "Can you describe a place you like to visit often?" }
       ]
     },
     {
       "part": "Part 1.2",
       "images": ["1.avif", "2.jpg"],
-      "prepareTime": 12,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
-        {
-          "question1Part1.2": "Describe what you see in these 2 pictures."
-        },
-        {
-          "question2Part1.2": "How do these two places make you feel, and which one would you prefer for studying?"
-        },
-        {
-          "question3Part1.2": "What advantages might there be to studying in a place like the one shown in the second picture?"
-        }
+        { "question1Part1.2": "Describe what you see in these two pictures." },
+        { "question2Part1.2": "How do these two places make you feel, and which one would you prefer for studying?" },
+        { "question3Part1.2": "What advantages might there be to studying in a place like the one shown in the second picture?" }
       ]
     },
     {
@@ -37,15 +27,9 @@
       "prepareTime": 60,
       "answerTime": 120,
       "questions": [
-        {
-          "question1Part2": "What benefits do you think these people get from spending time outdoors in nature?"
-        },
-        {
-          "question1Part2": "How do you think this experience might be different from doing indoor activities?"
-        },
-        {
-          "question1Part2": "Do you think people should spend more time in nature? Why or why not?"
-        }
+        { "question1Part2": "What benefits do you think these people get from spending time outdoors in nature?" },
+        { "question2Part2": "How do you think this experience might be different from doing indoor activities?" },
+        { "question3Part2": "Do you think people should spend more time in nature? Why or why not?" }
       ]
     },
     {
@@ -55,14 +39,14 @@
         {
           "statement": "Children should not be given smartphones until they are teenagers.",
           "For": {
-            "fact1": "Helps them focus on studies without distractions",
-            "fact2": "Encourages face-to-face social skills",
-            "fact3": "Reduces risks of excessive screen time and online dangers"
+            "fact1": "Helps them focus on studies without distractions.",
+            "fact2": "Encourages face-to-face social skills.",
+            "fact3": "Reduces risks of excessive screen time and online dangers."
           },
           "Against": {
-            "fact1": "Smartphones help children learn and access educational content",
-            "fact2": "They provide a way for parents to communicate with their children",
-            "fact3": "Allowing smartphones at a younger age can help children learn digital skills early"
+            "fact1": "Smartphones help children learn and access educational content.",
+            "fact2": "They provide a way for parents to communicate with their children.",
+            "fact3": "Allowing smartphones at a younger age can help children learn digital skills early."
           }
         }
       ],

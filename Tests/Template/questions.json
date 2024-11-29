@@ -2,7 +2,7 @@
   "parts": [
     {
       "part": "Part 1.1",
-      "prepareTime": 12,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         { "question1Part1.1": "?" },
@@ -17,7 +17,7 @@
     {
       "part": "Part 1.2",
       "images": ["image1", "image2"],
-      "prepareTime": 12,
+      "prepareTime": 8,
       "answerTime": 30,
       "questions": [
         {
